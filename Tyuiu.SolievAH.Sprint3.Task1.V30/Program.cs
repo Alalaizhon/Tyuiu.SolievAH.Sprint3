@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.SolievAH.Sprint3.V30.Lib;
+using Tyuiu.SolievAH.Sprint3.Task1.V30.Lib;
 namespace Tyuiu.SolievAH.Sprint3.Task1.V30
 {
     class Program
