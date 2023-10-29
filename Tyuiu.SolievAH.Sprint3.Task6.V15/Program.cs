@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.SolievAH.Sprint3.Task5.V12.Lib;
+using Tyuiu.SolievAH.Sprint3.Task6.V15.Lib;
 
-namespace Tyuiu.SolievAH.Sprint3.Task5.V12
+namespace Tyuiu.SolievAH.Sprint3.Task6.V15
 {
     class Program
     {
@@ -16,30 +16,26 @@ namespace Tyuiu.SolievAH.Sprint3.Task5.V12
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Оператор цикла foreach                                            *");
-            Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #12                                                             *");
+            Console.WriteLine("* Задание #6                                                              *");
+            Console.WriteLine("* Вариант #15                                                             *");
             Console.WriteLine("* Выполнил: Солиев А.Х. | СмартБ 23-1                                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* вычислить значение функции при х = 5                                    *");
-            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("* Напишите программу, которая ищет среди целых чисел, принадлежащих       *");
+            Console.WriteLine("* числовому отрезку [6, 15] сумму всех делителей                          *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            int startValue1 = 1, startValue2 = 1, stopValue1 = 3, stopValue2 = 10, x = 5;
-            Console.WriteLine("x = " + x);
-            Console.WriteLine("Старт внешнего цикла = " + startValue1);
-            Console.WriteLine("Конец внешнего цикла = " + stopValue1);
-            Console.WriteLine("Старт внутреннего цикла = " + startValue2);
-            Console.WriteLine("Конец внутреннего цикла = " + stopValue2);
+            int startValue = 6, stopValue = 15;
+            Console.WriteLine("начало отрезка = " + startValue);
+            Console.WriteLine("Конец отрезка = " + stopValue);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            var res = ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2);
+            var res = ds.GetSumTheDivisors(startValue, stopValue);
             Console.WriteLine(res);
             Console.ReadKey();
         }
-    
     }
 }
